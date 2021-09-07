@@ -10,8 +10,8 @@
 // to a file named dataset1.h.
  
 #include "util.h"
-#include <stdint.h>
-volatile uint32_t tohost = 0;
+/*#include <stdint.h>
+volatile uint32_t tohost = 0;*/
 
 //--------------------------------------------------------------------------
 // Input/Reference Data
@@ -46,8 +46,8 @@ int main( int argc, char* argv[] )
   // Check the results
   return verify( DATA_SIZE, results_data, verify_data );
 }
-void _start()
+/*void _start()
 {
   main(1,' ');
   tohost = 1;
-}
+}*/

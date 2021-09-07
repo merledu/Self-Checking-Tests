@@ -19,7 +19,7 @@
 #include <stdint.h>
 
 // This is the number of discs in the puzzle.
-volatile uint32_t tohost = 0;
+//volatile uint32_t tohost = 0;
 #define NUM_DISCS  7
 
 //--------------------------------------------------------------------------
@@ -232,9 +232,9 @@ int main( int argc, char* argv[] )
   // Check the results
   return towers_verify( &towers );
 }
-void _start()
+/*void _start()
 {
   main(1,' ');
   tohost = 1;
-}
+}*/
 

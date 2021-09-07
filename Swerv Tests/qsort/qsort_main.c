@@ -13,7 +13,7 @@
 #include "util.h"
 #include <string.h>
 #include <assert.h>
-#include <stdint.h>
+//#include <stdint.h>
 
 // The INSERTION_THRESHOLD is the size of the subarray when the
 // algorithm switches to using an insertion sort instead of
@@ -40,7 +40,7 @@
 //--------------------------------------------------------------------------
 // Quicksort function
 
-volatile uint32_t tohost = 0;
+//volatile uint32_t tohost = 0;
 
 static void insertion_sort(size_t n, type arr[])
 {
@@ -154,8 +154,8 @@ int main( int argc, char* argv[] )
   // Check the results
   return verify( DATA_SIZE, input_data, verify_data );
 }
-void _start()
+/*void _start()
 {
   main(1,' ');
   tohost = 1;
-}
+}*/

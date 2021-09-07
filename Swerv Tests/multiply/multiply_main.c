@@ -12,7 +12,7 @@
 #include "util.h"
 
 #include "multiply.h"
-#include <stdint.h>
+//#include <stdint.h>
 
 //--------------------------------------------------------------------------
 // Input/Reference Data
@@ -21,7 +21,7 @@
 
 //--------------------------------------------------------------------------
 // Main
-volatile uint32_t tohost = 0;
+//volatile uint32_t tohost = 0;
 int main( int argc, char* argv[] )
 {
   int i;
@@ -44,8 +44,8 @@ int main( int argc, char* argv[] )
   // Check the results
   return verify( DATA_SIZE, results_data, verify_data );
 }
-void _start()
+/*void _start()
 {
   main(1,' ');
   tohost = 1;
-}
+}*/
